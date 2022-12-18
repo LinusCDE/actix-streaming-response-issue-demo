@@ -1,0 +1,29 @@
+[package]
+name = "actix-streaming-response-issue-demo"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = { version = "4.2", default-features = false, features = [ "macros" ] }
+actix-rt = { version = "2.7" }
+#actix-files = "0.6"
+#mime = "0.3"
+#actix-web-actors = "4.1"
+actix-cors = "0.6"
+#actix-multipart = "0.4"
+
+futures = { version = "0.3", features = [ "compat" ] }
+
+pin-project-lite = "0.2"
+
+anyhow = "1.0"
+
+lazy_static = "1.4"
+
+tokio = { version = "1", features = [ "rt-multi-thread", "time", "process", "macros", "sync", "fs" ] }
+tokio-util = { version = "0.7" }
+
+log = "0.4"
+env_logger = "0.9"
